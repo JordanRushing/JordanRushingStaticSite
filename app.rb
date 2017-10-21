@@ -6,15 +6,17 @@ class App < Roda
 
   route do |r|
     r.root do
-      view(:index)
+      view :index
     end
 
-    r.get('/home') do
-      r.redirect('/')
+    r.is 'home' do
+      r.redirect '/'
     end
 
-    r.get('/about') do
-      view(:about)
+    r.is 'about' do
+      r.get do
+        view :about
+      end
     end
   end
 end
