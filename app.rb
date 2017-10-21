@@ -1,5 +1,4 @@
 require 'roda'
-require 'tilt/erb'
 
 # Basic routing tree logic to render the index.erb template
 class App < Roda
