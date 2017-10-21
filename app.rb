@@ -1,10 +1,13 @@
 require 'roda'
+require 'tilt/erb'
 
-module TestSite
-  class WebApp < Roda
-    route do |r|
-      r.root do
-        render(index)
-      end
+# Basic routing tree logic to render the index.erb template
+class App < Roda
+  plugin :render
+
+  route do |r|
+    r.root do
+      view(:index)
     end
   end
+end
