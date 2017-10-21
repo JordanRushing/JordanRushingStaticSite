@@ -9,11 +9,11 @@ class App < Roda
       view(:index)
     end
 
-    r.on('/home') do
+    r.get('/home') do
       r.redirect('/')
     end
 
-    r.on('/about') do
+    r.get('/about') do
       view(:about)
     end
   end
