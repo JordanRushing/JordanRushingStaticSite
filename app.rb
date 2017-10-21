@@ -8,5 +8,9 @@ class App < Roda
     r.root do
       view(:index)
     end
+
+    r.get('/about') do
+      view(:about)
+    end
   end
 end
