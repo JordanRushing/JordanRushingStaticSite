@@ -1,5 +1,6 @@
 # roda-sequel-puma-heroku-app
-![Build Status](https://travis-ci.org/JordanRushing/roda-sequel-puma-heroku-app.svg?branch=master)
+[![Build Status](https://travis-ci.org/JordanRushing/roda-sequel-puma-heroku-app.svg?branch=master)](https://travis-ci.org/JordanRushing/roda-sequel-puma-heroku-app)  
+
 # Introduction
 This project was created to explore the [Roda](https://github.com/jeremyevans/roda) | [Puma](https://github.com/puma/puma) | [TravisCI](https://travis-ci.org/) | [Heroku](https://dashboard.heroku.com/login) stack for creating version-controlled, continuously integrated and deployed, simple, performant, and fun open-source web applications.  
 
