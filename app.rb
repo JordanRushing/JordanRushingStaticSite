@@ -1,6 +1,7 @@
 require 'roda'
 
-# Basic routing tree logic to render the index.erb template
+# App routing tree logic that takes the template for the
+# requested route and renders through layout.rb via Tilt
 class App < Roda
   plugin :render
 
@@ -16,6 +17,12 @@ class App < Roda
     r.is 'about' do
       r.get do
         view :about
+      end
+    end
+
+    r.is 'contact' do
+      r.get do
+        view :contact
       end
     end
   end
