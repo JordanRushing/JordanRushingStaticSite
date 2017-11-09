@@ -7,16 +7,16 @@ class App < Roda
 
   route do |r|
     r.root do
-      view :index
+      view :about
     end
 
     r.is 'home' do
       r.redirect '/'
     end
 
-    r.is 'about' do
+    r.is 'posts' do
       r.get do
-        view :about
+        view :index
       end
     end
 
