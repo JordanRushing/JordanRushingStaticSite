@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+html <!DOCTYPE>
 <html lang="en">
   <head>
     <title>Jordan Rushing's Personal Web Application</title>
@@ -7,10 +7,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Fira+Sans|Bungee+Shade">
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Roboto|Bungee+Shade">
     <style>
       body {
-      font-family: 'Fira Sans', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 24px;
       }
     </style>
@@ -19,7 +19,7 @@
     <nav class="navbar navbar-default navigation-clean">
       <div class="container">
         <div class="navbar-header">
-          <span class="name pull-left" href="home" style="font-family: 'Bungee Shade', sans-serif; font-size: 30px;">Jordan Rushing</span>
+          <span class="name pull-left" href="https://intense-castle-62855.herokuapp.com/" style="font-family: 'Bungee Shade', sans-serif; font-size: 30px;">Jordan Rushing</span>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -36,22 +36,6 @@
         </div>
       </div>
     </nav>
-    <div class="col-sm-3 sidenav">
-      <h4>Jordan Rushing</h4>
-      <ul class="nav nav-pills nav-stacked">
-        <li class="active"><a href="home">Home</a></li>
-        <li><a href="about">About Me</a></li>
-        <li><a href="contact">Contact</a></li>
-      </ul><br>
-      <div class="input-group">
-        <input type="text" class="form-control" placeholder="Search Blog..">
-        <span class="input-group-btn">
-          <button class="btn btn-default" type="button">
-            <span class="glyphicon glyphicon-search"></span>
-          </button>
-        </span>
-      </div>
-    </div>
     <div class="row">
       <div class="col-md-12">
         <%= yield %>
