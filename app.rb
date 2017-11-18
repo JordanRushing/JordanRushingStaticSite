@@ -1,7 +1,5 @@
 require 'roda'
 
-# App routing tree logic that takes the template for the
-# requested route and renders through layout.rb via Tilt
 class App < Roda
   plugin :render
 
@@ -16,7 +14,7 @@ class App < Roda
 
     r.is 'posts' do
       r.get do
-        view :index
+        view :posts
       end
     end
 
