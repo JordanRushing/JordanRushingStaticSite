@@ -20,9 +20,10 @@
                   <h3>Example Post for Aimee and Nico</h3>
                   <p><strong>12.01.2017 | 19:47 PDT</strong></p>
               </header>
-              <p>The other day I worked with two friends to go over how my static site was put together and what making a change to the site, such as adding a post, would entail. They are both developers; one newly interested, and one who programs for a career. Deciding to jump in a group Discord call and code on a Friday night after coding all week at first seemed like a condemnation of our social lives but quickly proved to be fun, informative, and an activity worth repeating in the future. Fast forward to pushing the code to Heroku and I could not figure out why the post was not appearing on the live site. We hit our heads against the repo and decided to call it a night. Today I determined the reason and it is a valuable lesson in both version control hygiene and being careful when committing code while tired.</p>
+              <p>The other day I worked with two friends to go over how my static site was put together and what making a change to the site, such as adding a post, would entail. They are both developers; one newly interested, and one who programs for a career. Deciding to jump in a group Discord call and code on a Friday night after coding all week at first seemed like a condemnation of our social lives but quickly proved to be fun, informative, and an activity worth repeating in the future.</p>
+              <p>Fast forward to pushing the code to Heroku and I could not figure out why the post was not appearing on the live site. We hit our heads against the repo and decided to call it a night. Today I determined the reason and it is a valuable lesson in both version control hygiene and being careful when committing code while tired.</p><br>
               <p> If we take a look at <b>app.rb</b>, we can see exactly what happened:
-                  <pre><code>
+                  <div class="col-md-6"><pre><code class="ruby">
 require 'roda'
 
 class App < Roda
@@ -50,7 +51,7 @@ class App < Roda
     end
   end
 end
-                  </pre></code>
+                  </pre></code></div>
                   In the above code, the 'posts' route previously resolved to a deprecated file <b>index.erb</b> with identical contents to my current <b>posts.erb</b> (this move from index to posts was done for more logical naming clarity). As it turns out when working with Aimee and Nico, the code for our example post was being placed in <b>index.erb</b> as I had not yet removed it from the repository.</p>
               <p>Lessons learned:
                   <ul>
