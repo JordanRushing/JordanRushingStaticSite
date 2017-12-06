@@ -1,6 +1,6 @@
 <style>
   body {
-  font-family: 'Lora', serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 16px;
   }
 </style>
@@ -20,7 +20,44 @@
                   <h3>Example Post for Aimee and Nico</h3>
                   <p><strong>12.01.2017 | 19:47 PDT</strong></p>
               </header>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+              <p>The other day I worked with two friends to go over how my static site was put together and what making a change to the site, such as adding a post, would entail. They are both developers; one newly interested, and one who programs for a career. Deciding to jump in a group Discord call and code on a Friday night after coding all week at first seemed like a condemnation of our social lives but quickly proved to be fun, informative, and an activity worth repeating in the future. Fast forward to pushing the code to Heroku and I could not figure out why the post was not appearing on the live site. We hit our heads against the repo and decided to call it a night. Today I determined the reason and it is a valuable lesson in both version control hygiene and being careful when committing code while tired.</p>
+              <p> If we take a look at <b>app.rb</b>, we can see exactly what happened:
+                  <pre><code>
+require 'roda'
+
+class App < Roda
+  plugin :render
+
+  route do |r|
+    r.root do
+      view :about
+    end
+
+    r.is 'home' do
+      r.redirect '/'
+    end
+
+    r.is 'posts' do
+      r.get do
+        view :posts
+      end
+    end
+
+    r.is 'contact' do
+      r.get do
+        view :contact
+      end
+    end
+  end
+end
+                  </pre></code>
+                  In the above code, the 'posts' route previously resolved to a deprecated file <b>index.erb</b> with identical contents to my current <b>posts.erb</b> (this move from index to posts was done for more logical naming clarity). As it turns out when working with Aimee and Nico, the code for our example post was being placed in <b>index.erb</b> as I had not yet removed it from the repository.</p>
+              <p>Lessons learned:
+                  <ul>
+                      <li>Spend the time to think through and verify commits, particularly if dealing with deprecating files (even on hobby projects)</li>
+                      <li>DON'T try to ship code on a Friday night in most circumstances<li>
+                  </ul></p>
+              <p>In my next post, I'll go over how to spin up a developer AWS EC2 instance running ubuntu server with emacs as a daemon that can be connected to from any of your personal computing devices. This device-agnostic setup works amazingly for many development and operations scenarios and is the setup I've found to be the most productive for my workflow. Thanks for reading!</p>
               <br>
               <br>
               <header>
