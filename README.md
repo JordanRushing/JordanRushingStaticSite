@@ -26,6 +26,6 @@ This project was created to explore the [Roda](https://github.com/jeremyevans/ro
 8. Navigate to https://travis-ci.org and link your new repo to enable CI
 
 ## TODO
-* HTTPS
+* ~~HTTPS~~ Done! (https://jordanrushing.io)
 * Site-specific CSS stylesheet with better fonts for posts
 * Potentially reorganize post logic to be more modular (not per <article>)
