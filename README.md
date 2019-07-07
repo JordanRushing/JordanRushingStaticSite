@@ -1,4 +1,4 @@
-# JordanRushingStaticSite
+# JordanRushingStaticSite [https://www.jordanrushing.io](https://www.jordanrushing.io)
 [![Build Status](https://travis-ci.org/JordanRushing/roda-sequel-puma-heroku-app.svg?branch=master)](https://travis-ci.org/JordanRushing/roda-sequel-puma-heroku-app)  
 
 ## Introduction
