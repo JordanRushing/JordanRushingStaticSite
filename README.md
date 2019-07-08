@@ -1,5 +1,6 @@
-# JordanRushingStaticSite [https://www.jordanrushing.io](https://www.jordanrushing.io)
-[![Build Status](https://travis-ci.org/JordanRushing/roda-sequel-puma-heroku-app.svg?branch=master)](https://travis-ci.org/JordanRushing/roda-sequel-puma-heroku-app)  
+# JordanRushingStaticSite [https://www.jordanrushing.io](https://www.jordanrushing.io)  
+
+[![Build Status](https://travis-ci.org/JordanRushing/JordanRushingStaticSite.svg?branch=master)](https://travis-ci.org/JordanRushing/JordanRushingStaticSite)
 
 ## Introduction
 This project was created to explore the [Roda](https://github.com/jeremyevans/roda) | [Puma](https://github.com/puma/puma) | [TravisCI](https://travis-ci.org/) | [Heroku](https://dashboard.heroku.com/login) | [Route53](https://aws.amazon.com/route53/) stack for creating version-controlled, continuously integrated and deployed, simple, and performant open-source web applications.
