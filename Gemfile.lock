@@ -10,7 +10,7 @@ GEM
       ast (~> 2.4.0)
     puma (4.0.0)
       nio4r (~> 2.0)
-    rack (2.0.7)
+    rack (2.1.4)
     rainbow (3.0.0)
     rake (12.3.2)
     roda (3.21.0)
