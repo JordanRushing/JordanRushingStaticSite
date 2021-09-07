@@ -4,6 +4,7 @@ require 'roda'
 
 class App < Roda
   plugin :render
+  plugin :head
 
   route do |r|
     r.root do
