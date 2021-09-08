@@ -2,7 +2,6 @@ GEM
   remote: https://rubygems.org/
   specs:
     ast (2.4.1)
-    bacon (1.2.0)
     nio4r (2.5.4)
     parallel (1.19.2)
     parser (2.7.1.5)
@@ -35,7 +34,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bacon
   puma
   rack
   rake
@@ -44,7 +42,7 @@ DEPENDENCIES
   tilt
 
 RUBY VERSION
-   ruby 2.7.1p83
+   ruby 3.0.0p0
 
 BUNDLED WITH
-   2.1.4
+   2.2.27

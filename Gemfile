@@ -3,7 +3,6 @@
 source 'https://rubygems.org'
 ruby '3.0.0'
 
-gem 'bacon'
 gem 'puma'
 gem 'rack'
 gem 'rake'
