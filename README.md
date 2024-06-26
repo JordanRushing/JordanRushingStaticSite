@@ -1,9 +1,7 @@
 # [https://www.jordanrushing.io](https://www.jordanrushing.io)  
 
-[![Build Status](https://travis-ci.org/JordanRushing/JordanRushingStaticSite.svg?branch=master)](https://travis-ci.org/JordanRushing/JordanRushingStaticSite)
-
 ## Stack
-[Roda](https://github.com/jeremyevans/roda) | [Puma](https://github.com/puma/puma) | [TravisCI](https://travis-ci.org/) | [Heroku](https://dashboard.heroku.com/login) | [Route53](https://aws.amazon.com/route53/)
+[Roda](https://github.com/jeremyevans/roda) | [Puma](https://github.com/puma/puma) | [Heroku](https://dashboard.heroku.com/login) | [Route53](https://aws.amazon.com/route53/)
 
 ## Required
 * Ruby version and gem requirements are specified in ```Gemfile```
