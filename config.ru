@@ -1,5 +1,10 @@
 # frozen_string_literal: true
+require './app'
+require 'rack/deflater'
+require 'rack/protection'
 
-# config.ru
+use Rack::Deflater
+use Rack::Protection
+
 require './app'
 run App.freeze
